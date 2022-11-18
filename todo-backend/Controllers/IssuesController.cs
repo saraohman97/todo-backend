@@ -29,7 +29,8 @@ namespace test.Controllers
                 {
                     Subject = req.Subject,
                     Description = req.Message,
-                    Mail = req.Mail
+                    Mail = req.Mail,
+                    StatusId = 1
                 };
                 _context.Add(_issue);
                 await _context.SaveChangesAsync();
